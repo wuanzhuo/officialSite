@@ -43,6 +43,7 @@ GEM
       sass (~> 3.2)
     jekyll-watch (1.1.1)
       listen (~> 2.7)
+    json (1.8.1)
     kramdown (1.4.1)
     liquid (2.6.1)
     listen (2.7.9)
@@ -78,6 +79,9 @@ GEM
     timers (1.1.0)
     toml (0.1.1)
       parslet (~> 1.5.0)
+    uglifier (2.5.3)
+      execjs (>= 0.3.0)
+      json (>= 1.8.0)
     yajl-ruby (1.1.0)
 
 PLATFORMS
@@ -85,3 +89,4 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll-assets
+  uglifier
