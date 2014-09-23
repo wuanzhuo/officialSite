@@ -7,14 +7,50 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% stylesheet app %}
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   </head>
   <body>
     {% include nav.html %}
 
-    <main class="container">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
 
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active" style="background-image: url('http://placekitten.com/1024/400')">
+          <div class="carousel-caption">
+          </div>
+        </div>
+        <div class="item" style="background-image: url('http://placekitten.com/1024/401')">
+          <div class="carousel-caption">
+          </div>
+        </div>
+        <div class="item" style="background-image: url('http://placekitten.com/1024/500')">
+          <div class="carousel-caption">
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left fa fa-angle-left"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right fa fa-angle-right"></span>
+      </a>
+    </div>
+
+    <main class="container">
+      {{ content }}
     </main>
 
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    {% javascript app %}
   </body>
 </html>
 
