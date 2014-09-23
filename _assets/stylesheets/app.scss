@@ -1,8 +1,18 @@
 @import "bootstrap";
 @import "compass/css3/background-size";
+@import "fonts";
+
+$base-green: #89d542;
 
 body {
   padding-top: 51px;
+  font-family: "MHei","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif" !important;
+  font-size: 18px;
+}
+
+p {
+
+  color: #72787c;
 }
 
 
@@ -11,16 +21,24 @@ body {
   .item {
     height: 500px;
     @include background-size(cover);
+    background-position: center 50%;
   }
 
+}
+
+hr {
+  width: 200px;
+  margin: 20px auto;
+  border-color: $base-green;
+  border-width: 2px;
+  opacity: 0.7;
 }
 
 section {
   padding: 30px 0;
 
   h3 {
-    font-size: 38px;
-    margin-bottom: 30px;
+    font-size: 48px;
   }
 
 }
