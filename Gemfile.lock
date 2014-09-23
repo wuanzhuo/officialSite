@@ -146,4 +146,5 @@ DEPENDENCIES
   compass
   github-pages (= 27)
   jekyll-assets
+  json
   uglifier
