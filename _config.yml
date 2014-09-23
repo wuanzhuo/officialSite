@@ -12,7 +12,6 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
-gems: [jekyll-assets]
 assets:
   js_compressor:  uglifier
   css_compressor: sass
